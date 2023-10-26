@@ -17,6 +17,15 @@
 
 ## 🟢 Features
 
+### TO DO
+> ❌ ADD Login form with connection to the database
+
+### IN Progress
+> 🔌 empty
+
+### Complete
+> ✔️ Database connection
+
 > [!NOTE]
 > This app is in development!
 
