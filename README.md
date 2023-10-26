@@ -17,7 +17,8 @@
 
 ## 🟢 Features
 
-> *in development ...*
+> [!NOTE]
+> This app is in development!
 
 
 ## 👥 Authors
