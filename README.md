@@ -4,6 +4,7 @@
 ```bash
   python -m venv venv
 ```
+- Make sure your **virtual environment** is selected, then:
 - Install the following libraries into your **virtual environment** :
 ```bash
   pip install mysql-connector-python
