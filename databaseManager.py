@@ -11,6 +11,19 @@ myDB = mysql.connector.connect(
 cursor = myDB.cursor()
 
 # Perform Actions:
+def CheckUserInDB(_user):
+    try:
+        sql = f"SELECT user FROM users WHERE user = '{_user}'"
+        cursor.execute(sql)
+        result = cursor.fetchall()[0][0]
+
+        if result == _user:
+            return result
+        else:
+            return None
+    except Exception as e:
+        print('Error: ', e)
+
 
 
 myDB.close()
