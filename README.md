@@ -18,13 +18,15 @@
 ## 🟢 Features
 
 ### TO DO
-> ❌ ADD Login form with connection to the database
+> ❌ improvement on the placement of widgets (grid style)
 
 ### IN Progress
-> 🔌 empty
+> 🔌 weather widget optimization (show emote with the weather status: ☀️ / ☁️ / 🌨️ / 🌩️ / ...)
 
 ### Complete
 > ✔️ Database connection
+> ✔️ Clock by user system hour
+> ✔️ Weather depending on user's city/country
 
 #
 
