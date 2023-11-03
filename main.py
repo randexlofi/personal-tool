@@ -1,8 +1,11 @@
 import tkinter as tk
 from tkinter import Menu
 from tkinter.messagebox import askyesno
+
+#SELF IMPORTS
 import settings
 import databaseManager as dbM
+import weatherAPI as weather
 
 # Variables
 
@@ -36,7 +39,7 @@ if isLoggedIn:
     root.minsize(settings.GetWindowWidth(root) // 3, settings.GetWindowHeight(root) // 3)
     root.maxsize(settings.GetWindowWidth(root) // 3, settings.GetWindowHeight(root) // 3)
     root.resizable(False, False)
-    #root.iconbitmap('code-signs.ico')
+    root.iconbitmap('./imgs/icons/code-signs.ico')
 
     #Show and INIT the bar menu
     mainMenu = Menu(root)
@@ -81,11 +84,29 @@ if isLoggedIn:
     # 2 line
     btn_mainButton = tk.Button(
         root,
-        padx=10, pady=5,
         text='DON\'T CLICK ME!',
+        bg=settings.COLOR_LIGHTGREY,
+        fg=settings.COLOR_WHITE,
+        padx=10, pady=5,
+        bd=0,
         command=root.destroy
     )
     btn_mainButton.place(x=0, y=50)
+
+    def UpdateWeather():
+        lbl_weather.config(text=f"{weather.GetTemp(settings.USER_CITY)} ºC")
+        root.after(300000, UpdateClock) # 5 min update time (300000)
+
+    lbl_weather = tk.Label(
+        root,
+        #text=f"{weather.GetTemp('Viseu')} ºC",
+        padx=10, pady=10,
+        font='Arial 10',
+        bg=settings.COLOR_BACKGROUND,
+        fg=settings.COLOR_WHITE
+    )
+    lbl_weather.place(x=(settings.GetWindowWidth(root) // 3)-75, y=30)
+    UpdateWeather()
 
 
     root.mainloop()

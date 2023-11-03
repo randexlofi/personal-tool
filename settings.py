@@ -4,6 +4,9 @@ import time
 # Window Settings
 APP_TITLE = 'Personal APP'
 
+# User Settings
+USER_CITY = 'Lisbon'
+
 # Colors
 COLOR_BACKGROUND = '#1a1a1a'
 
