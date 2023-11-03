@@ -18,14 +18,16 @@
 ## 🟢 Features
 
 ### TO DO
-> ❌ improvement on the placement of widgets (grid style)
+> ❌ improve the placement for the widgets (grid style)
 
 ### IN Progress
 > 🔌 weather widget optimization (show emote with the weather status: ☀️ / ☁️ / 🌨️ / 🌩️ / ...)
 
 ### Complete
 > ✔️ Database connection
+> 
 > ✔️ Clock by user system hour
+> 
 > ✔️ Weather depending on user's city/country
 
 #
