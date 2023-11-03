@@ -1,6 +1,6 @@
 import requests, json
 
-APIKey = '338ebfa074a6c17c9d1872b45230e82c'
+APIKey = 'YOUR_API_KEY'
 
 def GetTemp(city):
     URL = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={APIKey}"
