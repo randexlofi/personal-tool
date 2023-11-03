@@ -11,6 +11,9 @@ COLOR_BLACK = '#0000000'
 COLOR_WHITE = '#ffffff'
 COLOR_LIGHTGREY = '#383838'
 
+# Icon Paths
+ICON_WINDOW = '/imgs/icons/code-signs.ico'
+
 # Window Dimensions
 def GetWindowWidth(_root):
     return _root.winfo_screenwidth()
